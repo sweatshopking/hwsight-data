@@ -12,6 +12,7 @@ devices without a new app release. The files are published here as
 | `rules.toml` | Which devices need no driver, and what a working driver should create |
 | `firmware.toml` | Which package provides missing firmware, for each distro and release |
 | `descriptions.toml` | What each kind of device does, in plain English |
+| `fixes.toml` | How to fix each kind of problem, in plain English |
 | `pci.ids`, `usb.ids` | Device names, from the upstream ID databases |
 | `manifest.toml` | Version, size, and checksum of every file |
 | `manifest.toml.sig` | Signature over the manifest |
@@ -24,7 +25,7 @@ If anything fails, nothing is installed and hwsight keeps using what it already 
 
 ## Sources and licences
 
-- `rules.toml`, `firmware.toml`, and `descriptions.toml` are part of hwsight:
+- `rules.toml`, `firmware.toml`, `descriptions.toml`, and `fixes.toml` are part of hwsight:
   GPL-3.0-or-later.
 - `pci.ids` comes from [The PCI ID Repository](https://pci-ids.ucw.cz/) and `usb.ids`
   from [The USB ID Repository](http://www.linux-usb.org/usb-ids.html). Both are
